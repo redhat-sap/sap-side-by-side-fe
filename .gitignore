@@ -1,0 +1,6 @@
+.idea
+*.iml
+target
+
+node_modules
+src/assets/config/config.json

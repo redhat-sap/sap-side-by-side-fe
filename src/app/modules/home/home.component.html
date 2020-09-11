@@ -1,0 +1,48 @@
+<p>Welcome to SAP side by side integration demo!</p>
+
+<mat-form-field class="example-form-field">
+  <mat-label>Search</mat-label>
+  <input matInput type="text" [(ngModel)]="searchTerm" (keyup.enter)="this.submit();">
+  <button mat-button *ngIf="searchTerm" matSuffix mat-icon-button aria-label="Clear" (click)="searchTerm=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+<button mat-button type="submit" (click)="this.submit();">Submit</button>
+
+<!-- <pre>
+  {{ customers | json }}
+</pre> -->
+
+<div *ngIf="customers && customers.CUSTOMER_LIST">
+  <mat-list>
+    <div mat-subheader>CUSTOMER_LIST</div>
+    <mat-card *ngFor=" let folder of customers.CUSTOMER_LIST">
+      <pre mat-line>{{folder | json}}</pre>
+    </mat-card>
+
+    <mat-divider></mat-divider>
+    <div mat-subheader>CUSTOMER_RANGE</div>
+    <mat-card *ngFor=" let folder of customers.CUSTOMER_RANGE">
+      <pre mat-line>{{folder | json}}</pre>
+    </mat-card>
+
+    <mat-divider></mat-divider>
+    <div mat-subheader>EXTENSION_IN</div>
+    <mat-card *ngFor=" let folder of customers.EXTENSION_IN">
+      <pre mat-line>{{folder | json}}</pre>
+    </mat-card>
+
+    <mat-divider></mat-divider>
+    <div mat-subheader>EXTENSION_OUT</div>
+    <mat-card *ngFor=" let folder of customers.EXTENSION_OUT">
+      <pre mat-line>{{folder | json}}</pre>
+    </mat-card>
+
+    <mat-divider></mat-divider>
+    <div mat-subheader>RETURN</div>
+    <mat-card *ngFor=" let folder of customers.RETURN">
+      <pre mat-line>{{folder | json}}</pre>
+    </mat-card>
+
+  </mat-list>
+</div>

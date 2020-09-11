@@ -1,2 +1,3 @@
-# sap-side-by-side-fe
-Frontend microservice for the SAP side-by-side demo
+# Info
+
+This repository will contain the code to support the frontend microservice for the SAP side-by-side demo

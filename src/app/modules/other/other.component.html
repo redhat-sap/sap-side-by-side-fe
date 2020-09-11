@@ -1,0 +1,25 @@
+<h3>Create a new customer</h3>
+
+<div class="example-container">
+  <mat-card>
+    <mat-form-field>
+      <mat-label>custType</mat-label>
+      <mat-select [(ngModel)]="this.customerModel.custType">
+        <mat-option value="B">B</mat-option>
+        <mat-option value="P">P</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div *ngFor="let item of fields">
+      <mat-form-field>
+        <mat-label>{{ item | titlecase }}</mat-label>
+        <input matInput [(ngModel)]="this.customerModel[item]" name="[item]" required>
+      </mat-form-field>
+      <br>
+    </div>
+    <button mat-flat-button type="submit" (click)="this.submit();">Submit</button>
+
+  </mat-card>
+
+</div>
+
+<pre>{{ newCust | json }} </pre>
