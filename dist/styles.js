@@ -486,8 +486,8 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/mak/GIT/sap-integration-demo-artifacts/frontend/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
-module.exports = __webpack_require__(/*! /home/mak/GIT/sap-integration-demo-artifacts/frontend/src/styles.scss */"./src/styles.scss");
+__webpack_require__(/*! /home/codespace/workspace/sap-side-by-side-fe/node_modules/@angular/material/prebuilt-themes/indigo-pink.css */"./node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+module.exports = __webpack_require__(/*! /home/codespace/workspace/sap-side-by-side-fe/src/styles.scss */"./src/styles.scss");
 
 
 /***/ })

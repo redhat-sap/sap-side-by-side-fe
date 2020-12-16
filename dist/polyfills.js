@@ -3033,7 +3033,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/mak/GIT/sap-integration-demo-artifacts/frontend/src/polyfills.ts */"./src/polyfills.ts");
+module.exports = __webpack_require__(/*! /home/codespace/workspace/sap-side-by-side-fe/src/polyfills.ts */"./src/polyfills.ts");
 
 
 /***/ })

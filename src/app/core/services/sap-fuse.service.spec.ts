@@ -3,7 +3,7 @@ import { TestBed } from '@angular/core/testing';
 import { SapFuseService } from './sap-fuse.service';
 
 describe('SapFuseService', () => {
-  let service; SapFuseService;
+  let service: SapFuseService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
